@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jose Luis Leal — Board Advisor & Investor</title>
+    <meta name="description" content="Board Advisor & Investor. Former EY Global Equity Partner. Author of El Faro. Writing Ungoverned: The Sovereignty Shift. Based in Andorra.">
+    <meta name="author" content="Jose Luis Leal">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Jose Luis Leal — Board Advisor & Investor">
+    <meta property="og:description" content="Working with boards and investors on what comes next. Former EY Global Equity Partner. Author of El Faro. Based in Andorra.">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://leal.info">
+    <meta property="profile:first_name" content="Jose Luis">
+    <meta property="profile:last_name" content="Leal">
+    
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Jose Luis Leal — Board Advisor & Investor">
+    <meta name="twitter:description" content="Working with boards and investors on what comes next. Former EY Global Equity Partner. Based in Andorra.">
+
+    <!-- Schema.org JSON-LD -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "@id": "https://leal.info/#person",
+        "name": "Jose Luis Leal",
+        "alternateName": ["José Luis Leal", "José Luis Leal Gayán", "Jose Leal", "J.L. Leal"],
+        "url": "https://leal.info",
+        "jobTitle": "Board Advisor & Investor",
+        "description": "Board Advisor & Investor. Former EY Global Equity Partner across 40+ markets. Author of El Faro in Es Diari de Menorca. Writing Ungoverned: The Sovereignty Shift.",
+        "knowsLanguage": ["en", "es", "fr"],
+        "nationality": {
+            "@type": "Country",
+            "name": "Spain"
+        },
+        "homeLocation": {
+            "@type": "Place",
+            "name": "Andorra"
+        },
+        "alumniOf": [
+            {
+                "@type": "CollegeOrUniversity",
+                "name": "Harvard Business School"
+            }
+        ],
+        "worksFor": {
+            "@type": "Organization",
+            "name": "NexThings"
+        },
+        "hasOccupation": [
+            {
+                "@type": "Occupation",
+                "name": "Board Advisor"
+            },
+            {
+                "@type": "Occupation",
+                "name": "Investor"
+            },
+            {
+                "@type": "Occupation",
+                "name": "Writer"
+            },
+            {
+                "@type": "Occupation",
+                "name": "Columnist"
+            },
+            {
+                "@type": "Occupation",
+                "name": "Conference Speaker"
+            }
+        ],
+        "knowsAbout": ["Artificial Intelligence", "Digital Transformation", "Data Strategy", "Blockchain", "Decentralized Finance", "Data Governance"],
+        "sameAs": [
+            "https://www.linkedin.com/in/jose-luis-leal/",
+            "https://www.crunchbase.com/person/jose-luis-leal",
+            "https://about.me/joseluisleal",
+            "https://www.wikidata.org/wiki/Q139363333",
+            "https://www.menorca.info/autor/jose-luis-leal.html"
+        ]
+    }
+    </script>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+    <style>
+        :root {
+            --navy: #0B1F3A;
+            --gold: #B8962E;
+            --gold-light: #D4B44A;
+            --cream: #F8F6F1;
+            --slate: #4A5568;
+            --light-gray: #E8E6E1;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: var(--cream);
+            color: var(--navy);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .container {
+            max-width: 680px;
+            width: 100%;
+        }
+
+        /* Gold accent line */
+        .accent-line {
+            width: 48px;
+            height: 3px;
+            background: var(--gold);
+            margin-bottom: 2.5rem;
+        }
+
+        .name {
+            font-family: 'EB Garamond', serif;
+            font-size: 3.2rem;
+            font-weight: 500;
+            letter-spacing: -0.02em;
+            line-height: 1.1;
+            margin-bottom: 0.6rem;
+            color: var(--navy);
+        }
+
+        .tagline {
+            font-size: 1.05rem;
+            font-weight: 400;
+            color: var(--gold);
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            margin-bottom: 2.5rem;
+        }
+
+        .bio {
+            font-family: 'EB Garamond', serif;
+            font-size: 1.25rem;
+            line-height: 1.75;
+            color: var(--slate);
+            margin-bottom: 1.5rem;
+        }
+
+        .bio em {
+            font-style: italic;
+            color: var(--navy);
+        }
+
+        .separator {
+            width: 100%;
+            height: 1px;
+            background: var(--light-gray);
+            margin: 2.5rem 0;
+        }
+
+        .section-label {
+            font-size: 0.72rem;
+            font-weight: 600;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-bottom: 1.2rem;
+        }
+
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem 1.5rem;
+        }
+
+        .links a {
+            font-family: 'DM Sans', sans-serif;
+            font-size: 0.95rem;
+            font-weight: 400;
+            color: var(--navy);
+            text-decoration: none;
+            border-bottom: 1px solid var(--light-gray);
+            padding-bottom: 2px;
+            transition: border-color 0.3s ease, color 0.3s ease;
+        }
+
+        .links a:hover {
+            border-color: var(--gold);
+            color: var(--gold);
+        }
+
+        .columns {
+            margin-top: 2.5rem;
+        }
+
+        .column-item {
+            margin-bottom: 1.5rem;
+        }
+
+        .column-title {
+            font-family: 'EB Garamond', serif;
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--navy);
+            margin-bottom: 0.3rem;
+        }
+
+        .column-desc {
+            font-size: 0.9rem;
+            color: var(--slate);
+            line-height: 1.5;
+        }
+
+        .column-desc a {
+            color: var(--gold);
+            text-decoration: none;
+            border-bottom: 1px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        .column-desc a:hover {
+            border-bottom-color: var(--gold);
+        }
+
+        .footer {
+            margin-top: 3rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--light-gray);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .footer-location {
+            font-size: 0.85rem;
+            color: var(--slate);
+        }
+
+        .footer-contact a {
+            font-size: 0.85rem;
+            color: var(--navy);
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px solid var(--gold);
+            padding-bottom: 2px;
+        }
+
+        .footer-contact a:hover {
+            color: var(--gold);
+        }
+
+        /* Subtle entrance animation */
+        @keyframes fadeUp {
+            from {
+                opacity: 0;
+                transform: translateY(16px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .container > * {
+            animation: fadeUp 0.6s ease-out both;
+        }
+
+        .container > *:nth-child(1) { animation-delay: 0.1s; }
+        .container > *:nth-child(2) { animation-delay: 0.15s; }
+        .container > *:nth-child(3) { animation-delay: 0.2s; }
+        .container > *:nth-child(4) { animation-delay: 0.3s; }
+        .container > *:nth-child(5) { animation-delay: 0.4s; }
+        .container > *:nth-child(6) { animation-delay: 0.5s; }
+        .container > *:nth-child(7) { animation-delay: 0.55s; }
+        .container > *:nth-child(8) { animation-delay: 0.6s; }
+        .container > *:nth-child(9) { animation-delay: 0.65s; }
+        .container > *:nth-child(10) { animation-delay: 0.7s; }
+
+        @media (max-width: 600px) {
+            .name {
+                font-size: 2.4rem;
+            }
+            .tagline {
+                font-size: 0.9rem;
+            }
+            .bio {
+                font-size: 1.1rem;
+            }
+            body {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="accent-line"></div>
+        
+        <h1 class="name">Jose Luis Leal</h1>
+        <p class="tagline">Board Advisor · Investor</p>
+
+        <p class="bio">
+            Working with boards and investors on what comes next — at a time when artificial intelligence, digital assets, and decentralised finance are quietly but quickly rewriting the rules of the exponential age.
+        </p>
+        <p class="bio">
+            Telecommunications Engineer by training. 25 years in Consulting — over a decade as Global Equity Partner at EY across 40+ markets in Europe, the US, the Middle East, India and Africa. Specialised in AI strategy, data governance, and digital transformation.
+        </p>
+        <p class="bio">
+            Now Board Advisor & Investor by conviction.
+        </p>
+
+        <div class="separator"></div>
+
+        <div class="section-label">Writing</div>
+        <div class="columns">
+            <div class="column-item">
+                <div class="column-title">El Faro</div>
+                <div class="column-desc">Biweekly column in <a href="https://www.menorca.info/autor/jose-luis-leal.html" target="_blank" rel="noopener">Es Diari de Menorca</a> on how technology and exponential change are reshaping everyday life.</div>
+            </div>
+            <div class="column-item">
+                <div class="column-title"><em>Ungoverned: The Sovereignty Shift</em></div>
+                <div class="column-desc">A book on how power is transferring from institutions to individuals to code. In progress.</div>
+            </div>
+        </div>
+
+        <div class="separator"></div>
+
+        <div class="section-label">Elsewhere</div>
+        <div class="links">
+            <a href="https://www.linkedin.com/in/jose-luis-leal/" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.crunchbase.com/person/jose-luis-leal" target="_blank" rel="noopener">Crunchbase</a>
+            <a href="https://www.menorca.info/autor/jose-luis-leal.html" target="_blank" rel="noopener">Es Diari de Menorca</a>
+        </div>
+
+        <div class="footer">
+            <span class="footer-location">Based in Andorra · EN · ES · FR</span>
+            <span class="footer-contact"><a href="https://www.linkedin.com/in/jose-luis-leal/" target="_blank" rel="noopener">Get in touch →</a></span>
+        </div>
+    </div>
+</body>
+</html>
