@@ -1061,6 +1061,8 @@ a:focus-visible, button:focus-visible {
 @media (max-width: 1199px) {
     .page { padding: 16px 16px 40px; }
     .rect { padding: 80px 48px; }
+    /* rects that use internal grid padding — keep zero */
+    .rect-about, .rect-faro, .rect-ungoverned { padding: 0; }
     .hero { padding: 32px 48px 0; }
     .hero-content { margin-left: 260px; }
     .hero-portrait { left: -16px; }
@@ -1072,6 +1074,8 @@ a:focus-visible, button:focus-visible {
     .nav-links { display: none; }
 
     .rect, .hero { padding: 64px 28px; }
+    /* rects with internal grid layout keep zero padding on mobile */
+    .rect-about, .rect-faro, .rect-ungoverned { padding: 0; }
 
     .hero {
         padding: 48px 28px;
@@ -1122,6 +1126,39 @@ a:focus-visible, button:focus-visible {
     .faro-visual img { max-width: 220px; }
     .faro-text { padding: 24px 28px 48px; text-align: center; }
     .rect-faro .rect-cta { align-self: center; }
+
+    /* About — stack on mobile, image on top */
+    .rect-about {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+    .about-visual {
+        max-height: 280px;
+    }
+    .about-visual img {
+        object-position: center center;
+    }
+    .about-text {
+        padding: 40px 28px 48px;
+    }
+    .rect-about .rect-title { font-size: 34px; }
+    .about-prose p { font-size: 17px; }
+    .about-prose p:last-child { font-size: 20px; }
+    .about-stats {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px 24px;
+    }
+    .about-stat-num { font-size: 36px; }
+
+    /* CTA primary — allow wrap + smaller on narrow screens */
+    .rect-cta-primary {
+        padding: 12px 18px;
+        font-size: 12px;
+        letter-spacing: 0.18em;
+    }
+
+    /* Contact padding safe */
+    .rect-contact { padding: 64px 24px; }
 
     .site-footer { padding: 48px 24px 32px; }
 }
