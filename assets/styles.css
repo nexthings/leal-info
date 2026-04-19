@@ -1070,8 +1070,29 @@ a:focus-visible, button:focus-visible {
 }
 
 @media (max-width: 899px) {
-    .nav { padding: 16px 4px; flex-wrap: wrap; gap: 16px; }
+    .nav {
+        padding: 12px 4px;
+        flex-wrap: nowrap;
+        gap: 12px;
+        align-items: center;
+    }
     .nav-links { display: none; }
+    .nav-brand { font-size: 24px; }
+    .nav-lang {
+        font-size: 13px;
+        gap: 2px;
+        flex-shrink: 0;
+    }
+    .nav-lang a {
+        padding: 10px 8px;
+        min-width: 36px;
+        text-align: center;
+        display: inline-block;
+        line-height: 1;
+    }
+    .nav-lang .sep {
+        padding: 0;
+    }
 
     .rect, .hero { padding: 64px 28px; }
     /* rects with internal grid layout keep zero padding on mobile */
