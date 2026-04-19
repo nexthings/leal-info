@@ -1095,10 +1095,30 @@ a:focus-visible, button:focus-visible {
         max-width: 240px;
         height: auto;
     }
-    .hero-kicker { justify-content: center; }
-    .hero-name { font-size: 52px; }
-    .hero-tagline { font-size: 19px; margin-left: auto; margin-right: auto; }
-    .hero-meta { justify-content: center; }
+    .hero-kicker {
+        justify-content: center;
+        white-space: normal;
+        font-size: 11px;
+        letter-spacing: 0.22em;
+    }
+    .hero-name { font-size: 48px; }
+    .hero-tagline {
+        font-size: 18px;
+        line-height: 1.4;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero-meta {
+        justify-content: center;
+        flex-wrap: wrap;
+        white-space: normal;
+        font-size: 10px;
+        letter-spacing: 0.12em;
+        gap: 6px 10px;
+    }
+    .hero-meta span + span::before {
+        margin-right: 10px;
+    }
 
     .rect-title { font-size: 36px; }
 
