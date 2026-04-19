@@ -39,56 +39,54 @@
 <script type="application/ld+json">
 {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "@id": "https://leal.info/#person",
-    "name": "Jose Luis Leal",
-    "alternateName": ["José Luis Leal", "José Leal", "Jose Leal"],
-    "url": "https://leal.info/es/",
-    "jobTitle": "Asesor de Consejos e Inversor",
-    "description": "Asesor de Consejos e Inversor. Ex-Socio Global de EY en más de 40 mercados. Autor de El Faro en Es Diari de Menorca. Escribiendo Ungoverned: The Sovereignty Shift.",
-    "knowsLanguage": ["en", "es", "fr", "ca"],
-    "nationality": {
-        "@type": "Country",
-        "name": "Spain"
-    },
-    "homeLocation": {
-        "@type": "Place",
-        "name": "Andorra"
-    },
-    "alumniOf": [
+    "@graph": [
         {
-            "@type": "CollegeOrUniversity",
-            "name": "Harvard Business School"
+            "@type": "Person",
+            "@id": "https://leal.info/#person",
+            "name": "Jose Luis Leal",
+            "alternateName": ["José Luis Leal", "José Leal", "Jose Leal"],
+            "url": "https://leal.info/",
+            "jobTitle": "Board Advisor & Investor",
+            "description": "Board Advisor & Investor. Former EY Global Equity Partner across 40+ markets. Author of El Faro in Es Diari de Menorca. Writing Ungoverned: The Sovereignty Shift.",
+            "knowsLanguage": ["en", "es", "fr", "ca"],
+            "nationality": {
+                "@type": "Country",
+                "name": "Spain"
+            },
+            "homeLocation": {
+                "@type": "Place",
+                "name": "Andorra"
+            },
+            "alumniOf": [
+                {
+                    "@type": "CollegeOrUniversity",
+                    "name": "Harvard Business School"
+                }
+            ],
+            "hasOccupation": [
+                { "@type": "Occupation", "name": "Board Advisor" },
+                { "@type": "Occupation", "name": "Investor" },
+                { "@type": "Occupation", "name": "Writer" },
+                { "@type": "Occupation", "name": "Columnist" },
+                { "@type": "Occupation", "name": "Conference Speaker" }
+            ],
+            "knowsAbout": ["Artificial Intelligence", "Digital Transformation", "Data Strategy", "Blockchain", "Decentralized Finance", "Data Governance"],
+            "sameAs": [
+                "https://www.linkedin.com/in/jose-luis-leal/",
+                "https://www.crunchbase.com/person/jose-luis-leal",
+                "https://about.me/joseluisleal",
+                "https://www.menorca.info/autor/jose-luis-leal.html"
+            ]
+        },
+        {
+            "@type": "WebSite",
+            "@id": "https://leal.info/#website",
+            "name": "Jose Luis Leal",
+            "alternateName": ["José Luis Leal", "José Leal", "Jose Leal"],
+            "url": "https://leal.info/",
+            "inLanguage": ["en", "es", "fr"],
+            "publisher": { "@id": "https://leal.info/#person" }
         }
-    ],
-    "hasOccupation": [
-        {
-            "@type": "Occupation",
-            "name": "Asesor de Consejos"
-        },
-        {
-            "@type": "Occupation",
-            "name": "Inversor"
-        },
-        {
-            "@type": "Occupation",
-            "name": "Escritor"
-        },
-        {
-            "@type": "Occupation",
-            "name": "Columnista"
-        },
-        {
-            "@type": "Occupation",
-            "name": "Ponente"
-        }
-    ],
-    "knowsAbout": ["Inteligencia Artificial", "Transformación Digital", "Estrategia de Datos", "Blockchain", "Finanzas Descentralizadas", "Gobierno del Dato"],
-    "sameAs": [
-        "https://www.linkedin.com/in/jose-luis-leal/",
-        "https://www.crunchbase.com/person/jose-luis-leal",
-        "https://about.me/joseluisleal",
-        "https://www.menorca.info/autor/jose-luis-leal.html"
     ]
 }
 </script>
