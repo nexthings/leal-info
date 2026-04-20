@@ -1055,6 +1055,20 @@ a:focus-visible, button:focus-visible {
     color: rgba(250, 246, 240, 0.5);
 }
 
+.footer-bottom a {
+    color: inherit;
+    padding: 4px 2px;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+    color: var(--gold);
+}
+
+.footer-bottom a[aria-current="page"] {
+    color: var(--cream);
+}
+
 /* ============================================================
    Responsive
    ============================================================ */
